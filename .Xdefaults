@@ -1,0 +1,99 @@
+#################################
+# Macros
+#################################
+
+#URxvt*macro.Ctrl+Shift+j: GotoTab -1
+#URxvt*macro.Ctrl+Shift+k: GotoTab +1
+#URxvt*macro.Ctrl+Shift+less: MoveTab -1
+#URxvt*macro.Ctrl+Shift+greater: MoveTab +1
+##URxvt*macro.Ctrl+Shift+c: Copy
+#URxvt*macro.Ctrl+Shift+v: Paste
+#URxvt*macro.Ctrl+Shift+f: ToggleFullscreen
+#URxvt*macro.Ctrl+Shift+t: NewTab 
+#URxvt*macro.Ctrl+Shift+n: NewTab 
+#URxvt*macro.Ctrl+Shift+r: ToggleTransparency
+
+#################################
+# URxvt
+#################################
+
+# General Window
+URxvt*title: URXVT
+URxvt*depth: 24 
+URxvt*geometry: 80x24-0+0
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*cursorBlink: False
+URxvt*iconFile: /usr/share/pixmaps/rxvt-unicode.png
+URxvt*iconName: rxvt-unicode
+! VI doesn't behave right with this, change to XTERM?
+URxvt*termName: rxvt-256color
+URxvt*pastableTabs: True
+URxvt*urlLauncher: firefox
+URxvt*urgentOnBell: True
+
+# Transparency
+URxvt*transparent: True
+URxvt*shading: 15 
+URxvt*fading: 10
+
+# Scrolling
+URxvt*jumpScroll: True 
+URxvt*skipScroll: True
+URxvt*scrollBar: True
+URxvt*scrollBar_right: True
+URxvt*scrollTtyOutput: False
+URxvt*scrollWithBuffer: False
+URxvt*scrollTtyKeypress: True
+URxvt*scrollstyle: rxvt 
+URxvt*saveLines: 10000
+URxvt*searchable-scrollback: C-S-s
+
+# Fonts
+#URxvt*font: xft:Andale Mono-8:antialias=false
+#URxvt*font: xft:Bitstream Vera Sans Mono:size=8
+#URxvt*font: xft:terminus:size=8
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+#URxvt*font: xft:Monospace:size=8:antialias=true:bold:hinting=true:ultracondensed
+URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:hinting=true
+URxvt*italicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+URxvt*bolditalicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+#URxvt*font: xft:Bitstream Vera Sans Mono:size=10
+#URxvt*boldFont: xft:Bitstream Vera Sans Mono:style=Bold:size=10
+#URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:size=10
+
+# Colors
+URxvt*background: #000000
+URxvt*foreground: #ffffff
+URxvt*cursorColor: #ffffff
+URxvt*pointerColor: #ffffff
+URxvt*borderColor: #ffffff
+URxvt*scrollColor: #cccccc
+URxvt*troughColor: #aaaaaa
+URxvt*color0: #000000
+URxvt*color1: #aa0000
+URxvt*color2: #00aa00
+URxvt*color3: #aa5500
+URxvt*color4: #6666cc
+URxvt*color5: #aa00aa
+URxvt*color6: #00aaaa
+URxvt*color7: #aaaaaa
+URxvt*color8: #555555
+URxvt*color9: #ff5555
+URxvt*color10: #55ff55
+URxvt*color11: #ffff55
+URxvt*color12: #5555ff
+URxvt*color13: #ff55ff
+URxvt*color14: #55ffff
+URxvt*color15: #ffffff
+
+# Tab / Menu bar
+#URxvt*tabbed.geometry: 80x24-0+0
+#URxvt*perl-ext-common: default,tabbed
+#URxvt*tabbed.tab-fg: 7
+#urxvt*tabbed.tab-bg: 8
+#urxvt*tabbed.tabbar-fg: 7
+#URxvt*tabbed.tabbar-bg: 0
+
+
+# vim: set ft=URxvt*c
