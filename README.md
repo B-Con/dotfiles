@@ -1,6 +1,6 @@
 B-Con's dotfiles
 ===
-These are my notable and sharable dotfiles. Dotfiles are part of what makes \*nix awesome.
+These are my notable and sharable dotfiles. Dotfiles are part of what make \*nix awesome.
 
 Installation
 ---
