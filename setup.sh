@@ -23,7 +23,7 @@ bu_dir="$target_dir/.dotfile-backup"
 
 function get_repo_file_list() {
 	# Kind of hacky.
-	find . -type f | grep -v /.git/ | grep -v /scripts/ | grep -v /README.md | grep -v /LICENSE.md
+	find . -type f | grep -v /.git/ | grep -v /setup.sh | grep -v /README.md | grep -v /LICENSE.md
 }
 
 # Take a directory as an argument and remove all the empty directories starting
