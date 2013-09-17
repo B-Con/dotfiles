@@ -151,21 +151,29 @@ case $1 in
 		echo "filesystem layout in another directory (specified in the"
 		echo "script's configuration). Useful for pointing dotfiles at a local"
 		echo "Git dotfiles repo."
-		echo "    Only symlinks are removed on uninstall, so you can manually"
+		echo
+		echo "The path to the local copy of the dotfiles repo is set within"
+		echo "script itself."
+		echo
+		echo "Only symlinks are removed on uninstall, so you can manually"
 		echo "change a symlink to a normal file, thus removing it from"
 		echo "the set of files that point to the repo, and it will be left"
 		echo "alone on uninstall."
-		echo "    To change the repository location, uninstall/purge then"
+		echo
+		echo "To change the repository location, uninstall/purge then"
 		echo "reinstall."
-		echo "    Existing symlinks are NOT overwridden on install. This"
-		echo "allows existing symlinks pointing to other repos with the same"
-		echo "file heirarchy to coexist, with the first one taking precident."
-		echo "It also allows for manual overwridding of which dotfiles point"
-		echo "to where."
-		echo "    Different sets of symlinks pointing to different repos can"
+		echo
+		echo "Existing symlinks are NOT overwridden on install. This allows"
+		echo "existing symlinks pointing to other repos with the same file"
+		echo "heirarchy to coexist, with the first one taking precident. It"
+		echo "also allows for manual overwriting of which dotfiles point to"
+		echo "where."
+		echo
+		echo "Different sets of symlinks pointing to different repos can"
 		echo "coexist."
-		echo "    All operations produce verbose output explaining exactly"
-		echo "what file operations happened."
+		echo
+		echo "All operations produce verbose output showing what file"
+		echo "operations happened."
 		echo
 		echo "Usage: $0 [install | uninstall | prune]"
 		echo
