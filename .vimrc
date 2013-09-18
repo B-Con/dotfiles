@@ -56,7 +56,7 @@ else
 endif " has("autocmd")
 
 "set t_Co=256
-set background=dark
+let g:molokai_original=1
 colorscheme molokai
 set history=50   " keep 50 lines of command line history
 set ruler        " show the cursor position all the time
