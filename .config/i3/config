@@ -1,0 +1,272 @@
+# i3 config
+
+
+############################################################
+# Misc. Setup
+############################################################
+
+# ISO 10646 = Unicode
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font -*-verdana-medium-r-normal--17-120-100-100-p-*-iso8859-*
+#font -monotype-courier new-medium-r-normal--17-120-100-100-m-*-iso10646-1
+
+# The IPC interface allows programs like an external workspace bar
+# (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
+ipc-socket ~/.config/i3/ipc.sock
+
+# Each set of controls gets its own set of modifiers
+set $FOCUS Mod1
+set $WIN   Mod1+Shift
+set $WM    Mod1+Ctrl
+set $APP   Mod4
+
+# Workspace naming variables
+# KEEP THEM MATCHED - i3 does straight string substitution
+# so there needs to be more than one set of variables
+set $WORKSPACE_1 1:main
+set $WORKSPACE_2 2:web
+set $WORKSPACE_3 3:media
+set $WORKSPACE_4 4:dev
+set $WORKSPACE_5 5:misc
+set $WORKSPACE_6 6
+set $WORKSPACE_7 7
+set $WORKSPACE_8 8
+set $WORKSPACE_9 9
+set $WORKSPACE_10 10
+
+set $WORKSPACE_MAIN 1:main
+set $WORKSPACE_WEB 2:web
+set $WORKSPACE_MEDIA 3:media
+set $WORKSPACE_DEV 4:dev
+set $WORKSPACE_MISC 5:misc
+
+#############################################################
+# Focus/display control ($FOCUS)
+#############################################################
+
+# Focus is given to whatever the mouse hovers over?
+focus_follows_mouse yes
+
+# Default orientation, horizontal, vertical, or auto, for root workspace container
+default_orientation horizontal
+
+# Default application display mode for containers
+workspace_layout default
+
+# Stacking mode size defaults
+#stack-limit rows 4
+#stack-limit cols 3
+
+# Fullscreen a window
+bindsym $FOCUS+f fullscreen
+
+# Container client ordering styles
+bindsym $FOCUS+s layout stacking
+bindsym $FOCUS+t layout tabbed
+bindsym $FOCUS+d layout default
+
+# Focus changing between parent and child (eg, container and window layerings)
+bindsym $FOCUS+p focus parent
+bindsym $FOCUS+c focus child
+
+# Go into the tiling layer / floating layer, depending on whether
+# the current window is tiling / floating
+bindsym $FOCUS+w focus mode_toggle
+
+# Focus ($FOCUS+j/k/l/;)
+bind $FOCUS+44 focus left
+bind $FOCUS+45 focus down
+bind $FOCUS+46 focus up
+bind $FOCUS+47 focus right
+# (alternatively, you can use the cursor keys:)
+#bindsym $FOCUS+Left h
+#bindsym $FOCUS+Down j
+#bindsym $FOCUS+Up k
+#bindsym $FOCUS+Right l
+
+# Workspaces ($FOCUS+1/2/…)
+bind $FOCUS+10 workspace $WORKSPACE_1
+bind $FOCUS+11 workspace $WORKSPACE_2
+bind $FOCUS+12 workspace $WORKSPACE_3
+bind $FOCUS+13 workspace $WORKSPACE_4
+bind $FOCUS+14 workspace $WORKSPACE_5
+bind $FOCUS+15 workspace $WORKSPACE_6
+bind $FOCUS+16 workspace $WORKSPACE_7
+bind $FOCUS+17 workspace $WORKSPACE_8
+bind $FOCUS+18 workspace $WORKSPACE_9
+bind $FOCUS+19 workspace $WORKSPACE_10
+
+# Change the container's window borders
+bindsym $FOCUS+comma border normal
+bindsym $FOCUS+period border 1pixel
+bindsym $FOCUS+slash border none
+
+#############################################################
+# Window & Container Manipulation: Moving, terminating ($WIN)
+#############################################################
+
+# Default border style for new windows (normal, 1px, borderless)
+new_window normal
+
+# Split a window to be a container
+bindsym $WIN+h split horizontal
+bindsym $WIN+v split vertical
+
+# Move ($WIN+j/k/l/;)
+bind $WIN+44 move left
+bind $WIN+45 move down
+bind $WIN+46 move up
+bind $WIN+47 move right
+# (alternatively, you can use the cursor keys:)
+#bindsym $WIN+Left mh
+#bindsym $WIN+Down mj
+#bindsym $WIN+Up mk
+#bindsym $WIN+Right ml
+
+# Use <this>+mouse to drag floating windows to their wanted position
+floating_modifier $WIN
+
+# Move to Workspace
+bind $WIN+10 move workspace $WORKSPACE_1
+bind $WIN+11 move workspace $WORKSPACE_2
+bind $WIN+12 move workspace $WORKSPACE_3
+bind $WIN+13 move workspace $WORKSPACE_4
+bind $WIN+14 move workspace $WORKSPACE_5
+bind $WIN+15 move workspace $WORKSPACE_6
+bind $WIN+16 move workspace $WORKSPACE_7
+bind $WIN+17 move workspace $WORKSPACE_8
+bind $WIN+18 move workspace $WORKSPACE_9
+bind $WIN+19 move workspace $WORKSPACE_10
+
+# Snap ($WIN+ m , . /)
+bindsym $WIN+m snap left
+bindsym $WIN+comma snap down
+bindsym $WIN+period snap up
+bindsym $WIN+slash snap right
+
+# Kill the current window or the entire client
+bindsym $WIN+w kill
+bindsym $WIN+q kill client
+
+# Toggle tiling/floating of the current window
+bindsym $WIN+f floating toggle
+
+# Enter resize mode
+bindsym $WIN+r mode "resize"
+
+# These bindings trigger as soon as you enter the resize mode
+# Arrow keys grow container in the appropriate direction.
+# Using shift causes negative growth in the opposite direction.
+mode "resize" {
+	bindsym Left resize grow left 10 px
+	bindsym Shift+Right resize shrink left 10 px
+
+	bindsym Down resize grow bottom 10 px
+	bindsym Shift+Up resize shrink bottom 10 px
+
+	bindsym Up resize grow top 10 px
+	bindsym Shift+Down shrink grow top 10 px
+
+	bindsym Right resize grow right 10 px
+	bindsym Shift+Left resize shrink right 10 px
+
+	bindsym r mode "default"
+}
+
+############################################################
+# Application & window class keybindings ($APP)
+############################################################
+
+bindsym $APP+space exec mygtkmenu /home/b-con/.config/mygtkmenu.conf
+bindsym $APP+b exec spacefm /home/b-con/Desktop
+bindsym $APP+c exec speedcrunch
+bindsym $APP+e exec geany
+bindsym $APP+l exec xscreensaver-command -lock
+bindsym $APP+r exec dmenu_run
+bindsym $APP+t exec urxvt
+bindsym $APP+v exec gnome-alsamixer
+bindsym $APP+w exec firefox
+bindsym XF86AudioLowerVolume exec amixer -q set Master 3dB-
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 3dB+
+bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86Sleep exec xset dpms force off
+bindsym Print exec screenshot
+
+assign [class="Firefox"] $WORKSPACE_WEB
+assign [class="Deluge"] $WORKSPACE_WEB
+#assign [class="Filezilla"] $WORKSPACE_WEB
+
+assign [class="Vlc"] $WORKSPACE_MEDIA
+assign [class="Clementine"] $WORKSPACE_MEDIA
+assign [class="Spotify"] $WORKSPACE_MEDIA
+assign [class="Kid3"] $WORKSPACE_MEDIA
+assign [class="KolourPaint"] $WORKSPACE_MEDIA
+assign [title="Hulu Desktop"] $WORKSPACE_MEDIA
+assign [title="k9copy"] $WORKSPACE_MEDIA
+
+for_window [title="Clementine image viewer"] floating enable
+
+#for_window [class="firefox"] layout tabbed
+
+#############################################################
+# WM controls ($WM)
+#############################################################
+
+# $WM+q exits i3
+bindsym $WM+q exit
+
+# $WM+r restarts i3 inplace
+bindsym $WM+y restart
+
+# Reload the config inplace
+bindsym $WM+e reload
+
+# Poweroff the computer
+bindsym $WM+s exec cmd-prompt "sudo shutdown -h now" "shutdown"
+
+# Restart the computer
+bindsym $WM+r exec cmd-prompt "sudo shutdown -r now" "reboot"
+
+############################################################
+# Color scheme
+############################################################
+
+# test: 000000 33aadd
+# old : 636363 636363
+#
+# class                  border  backgr. text
+client.focused           #000000 #737373 #ffffff
+client.focused_inactive  #000000 #202020 #aaaaaa
+client.unfocused         #000000 #202020 #aaaaaa
+client.urgent            #000000 #737373 #ffffff
+#client.urgent            #000000 #33aadd #ffffff
+#bar.focused              #444444 #33aadd #ffffff
+#bar.unfocused            #444444 #202020 #ffffff
+#bar.urgent               #444444 #33aadd #ffffff
+
+############################################################
+# Startup programs
+############################################################
+
+bar {
+	#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+	mode dock
+	position bottom
+	tray_output xinerama-0
+	workspace_buttons yes
+	
+	colors {
+		background         #000000
+		statusline         #ffffff
+
+		focused_workspace  #ffffff #737373
+		#focused_workspace  #ffffff #33aadd
+		#active_workspace  irrelevent for single-monitor
+		inactive_workspace #ffffff #202020
+		urgent_workspace   #ffffff #202020
+	}
+}
+
+# Need to restart these whenever i3 is reconfigured. Also handles normal "start".
+exec_always desktop-decorations i3 restart
+
