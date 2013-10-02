@@ -15,7 +15,7 @@ xmodmap ~/.xmodmaprc &
 	volwheel &
 	case "$HOSTNAME" in
 		"beacon")
-			xset m 1/1 3 &
+			xset m 3/2 3 &
 			numlockx on &
 			#if [ ! -d "/var/run/deluge" ] ; then
 				deluged &
