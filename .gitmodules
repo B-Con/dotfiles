@@ -1,0 +1,3 @@
+[submodule ".config/sublime-text-3/Packages/Monokai Extended"]
+	path = .config/sublime-text-3/Packages/Monokai Extended
+	url = git@github.com:B-Con/sublime-monokai-extended.git
