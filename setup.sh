@@ -22,7 +22,8 @@ bu_dir="$target_dir/.dotfile-backup"
 ###############################################################################
 
 function get_repo_file_list() {
-	# Kind of hacky.
+	# Kind of hacky. Note that this excludes all git files from this and
+	# submodules.
 	find . -type f | grep -v /.git/ | grep -v /setup.sh | grep -v /README.md | grep -v /LICENSE.md
 }
 
