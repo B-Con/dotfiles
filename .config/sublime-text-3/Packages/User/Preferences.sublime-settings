@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Molokai-Pastel/Molokai.tmTheme",
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -9,6 +9,5 @@
 	[
 		79,
 		99
-	],
-	"theme": "Flatland Dark.sublime-theme"
+	]
 }
