@@ -35,7 +35,7 @@ URxvt*urgentOnBell: True
 # Transparency
 URxvt*transparent: True
 URxvt*shading: 15 
-URxvt*fading: 10
+#URxvt*fading: 10
 
 # Scrolling
 URxvt*jumpScroll: True 
