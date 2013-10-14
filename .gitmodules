@@ -1,6 +1,8 @@
 [submodule ".config/sublime-text-3/Packages/Monokai Extended"]
 	path = .config/sublime-text-3/Packages/Monokai Extended
 	url = git@github.com:B-Con/sublime-monokai-extended.git
+	branch = master
 [submodule ".config/sublime-text-3/Packages/Tomorrow"]
 	path = .config/sublime-text-3/Packages/Tomorrow
 	url = git@github.com:B-Con/sublime-tomorrow-theme.git
+	branch = master
