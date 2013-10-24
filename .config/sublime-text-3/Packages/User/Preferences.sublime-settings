@@ -1,48 +1,41 @@
 {
-	// Styling
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
-
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pid",
+		"*.pyc",
+		"*.o",
+		"*~",
+		".tags",
+		".tags_sorted_by_file",
+		".gemtags",
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"__pycache__",
+		"env",
+		"env3",
+	],
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-
-	// Visuals
-	"highlight_line": true,
-
-	// Editor behavior
-	"scroll_past_end": false,
-    "highlight_modified_tabs": true,
-    "find_selected_text": true,
-
-    // Wrapping and line width
 	"rulers":
 	[
 		79,
 		99
 	],
-    "word_wrap": true,
-    "wrap_width": 80,
-
-    // Whitespace
-    "tab_size": 4,
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "ensure_newline_at_eof_on_save": true,
-
-    // Sidebar, exclude distracting files and folders
-    "file_exclude_patterns":
-    [
-        "*.pid",
-        "*.pyc",
-        "*.o",
-        "*~"
-    ],
-    "folder_exclude_patterns":
-    [
-        ".git",
-        "__pycache__",
-        "env",
-        "env3"
-    ]
+	"wrap_width": 80,
+	"word_wrap": true,
+	"scroll_past_end": false,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"show_minimap": true,
+	"always_show_minimap_viewport": true,
 }
