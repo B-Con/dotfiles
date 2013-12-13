@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 #
 # Install the dotfiles by symlinking files in $HOME to their corresponding file
