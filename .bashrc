@@ -4,7 +4,9 @@
 # The prompt (PS1) displays a PWD dynamically truncated to the width of the
 # console. The prompt is computed in three stages. The first part is the
 # username, host, and time info; the second the (truncated) pwd; and the third
-# the final design and command prompt. 
+# the final design and command prompt.
+#     Note that these variables need to be computed real time to get their
+# lengths,, so environments variables *don't work* as they get expanded later.
 #PS1='[\u@\h \w]\$ '
 bash_prompt_cmd() {
 	local CY="\[\e[1;36m\]" # Each is 12 chars long
@@ -18,7 +20,7 @@ bash_prompt_cmd() {
 	# Add the first part of the prompt: username,host, and time
 	local PROMPT_PWD=""
 	local PS1_T1="$BL.:[ $CY`whoami`@`hostname` $BL| $CY\t $BL|$CY "
-	local ps_len=$(( ${#PS1_T1} - 12 * 6 + 6 + 4 )) #Len adjust for colors, time and var
+	local ps_len=$(( ${#PS1_T1} - 12 * 6 + 6 + 4 )) #Account color, time, var
 	local PS1_T2=" $BL]:.\n${PROMPT} \[\e[0m\]"
 	local startpos=""
 
@@ -26,7 +28,7 @@ bash_prompt_cmd() {
 	local overflow_prefix="..."
 	local pwdlen=${#PROMPT_PWD}
 	local maxpwdlen=$(( COLUMNS - ps_len ))
-	# Sometimes COLUMNS isn't initiliased, if it isn't, fall back on 80
+	# Sometimes COLUMNS isn't initialized, if it isn't, fall back to 80.
 	[ $maxpwdlen -lt 0 ] && maxpwdlen=$(( 80 - ps_len )) 
 
 	if [ $pwdlen -gt $maxpwdlen ] ; then
@@ -51,12 +53,17 @@ alias diff="colordiff"
 alias du-dir="du -ms"  # Megabytes, summarize only the top directory
 alias free="free -m"  # Megabytes
 alias fuser="fuser -v"
+alias g="git"
+alias gc="git commit"
+alias gl="git log"
+alias gpush="git push"
+alias gpull="git pull"
+alias gs="git status"
 alias ls="ls --color=auto"
 alias l="ls"
 alias ll="ls -lh"
 alias la="ls -a"
 alias lal="ls -alh"
-alias man="LOCALE=ISO-9986-1 man"
 alias p="pacman"
 alias pa="packer --auronly"
 alias ping="ping -c 2"  # Ping twice

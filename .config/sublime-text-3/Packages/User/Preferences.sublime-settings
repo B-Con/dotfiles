@@ -1,4 +1,5 @@
 {
+	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -9,7 +10,7 @@
 		"*~",
 		".tags",
 		".tags_sorted_by_file",
-		".gemtags",
+		".gemtags"
 	],
 	"find_selected_text": true,
 	"folder_exclude_patterns":
@@ -17,7 +18,7 @@
 		".git",
 		"__pycache__",
 		"env",
-		"env3",
+		"env3"
 	],
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -30,12 +31,11 @@
 		79,
 		99
 	],
-	"wrap_width": 80,
-	"word_wrap": true,
 	"scroll_past_end": false,
+	"show_minimap": true,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"show_minimap": true,
-	"always_show_minimap_viewport": true,
+	"word_wrap": true,
+	"wrap_width": 80
 }
