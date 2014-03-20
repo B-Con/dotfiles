@@ -24,7 +24,7 @@ bash_prompt_cmd() {
 	local PS1_T2=" $BL]:.\n${PROMPT} \[\e[0m\]"
 	local startpos=""
 
-	PROMPT_PWD="${PWD/#$HOME/~}"
+	PROMPT_PWD="${PWD/#$HOME/\~}"
 	local overflow_prefix="..."
 	local pwdlen=${#PROMPT_PWD}
 	local maxpwdlen=$(( COLUMNS - ps_len ))
