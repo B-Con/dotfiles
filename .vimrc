@@ -76,3 +76,11 @@ endif
 
 " Press Enter to clear last search.
 nnoremap <CR> :noh<CR><CR>
+
+" Additional ctags bindings.
+" Go back to before the tag jump.
+nnoremap <C-[> <C-t>
+" Next tag.
+nnoremap <C-.> :tnext<CR>
+" Prev tag.
+nnoremap <C-,> :tprev<CR>

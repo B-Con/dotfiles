@@ -6,3 +6,8 @@
 	path = .config/sublime-text-3/Packages/Tomorrow
 	url = git@github.com:B-Con/sublime-tomorrow-theme.git
 	branch = master
+[submodule ".vim/plugin/autotag"]
+	path = .vim/plugin/autotag
+	url = git@github.com:craigemery/vim-autotag.git
+	branch = master
+
