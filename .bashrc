@@ -48,7 +48,7 @@ export HISTFILESIZE HISTSIZE HISTIGNORE
 
 # Command aliases
 alias arp="arp -n"  # Don't resolve names, can sometimes take forever
-alias df="df -BG"
+alias df="df -h"
 alias diff="colordiff"
 alias du-dir="du -ms"  # Megabytes, summarize only the top directory
 alias free="free -m"  # Megabytes
@@ -58,6 +58,7 @@ alias gc="git commit"
 alias gl="git log"
 alias gpush="git push"
 alias gpull="git pull"
+alias grep="grep --color=auto"
 alias gs="git status"
 alias ls="ls --color=auto"
 alias l="ls"
