@@ -40,11 +40,21 @@ bash_prompt_cmd() {
 PROMPT_COMMAND=bash_prompt_cmd
 
 # History settings
-HISTFILESIZE=1000
-HISTSIZE=1000
-HISTIGNORE="&:[ ]*"
+HISTFILESIZE=100000
+HISTSIZE=100000
+HISTIGNORE="history:histsync"
+HISTCONTROL="ignorespace:ignoredups"
 shopt -s histappend
 export HISTFILESIZE HISTSIZE HISTIGNORE
+
+# Tab completion
+[ -f /etc/bash_completion ] && source /etc/bash_completion
+complete -cf sudo   # Enable completion for sudo
+
+# Python virtual environment
+export WORKON_HOME=~/data/projects/python-virtualenvs
+export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper_lazy.sh
 
 # Command aliases
 alias arp="arp -n"  # Don't resolve names, can sometimes take forever
@@ -60,6 +70,7 @@ alias gpush="git push"
 alias gpull="git pull"
 alias grep="grep --color=auto"
 alias gs="git status"
+alias histsync="history -n; history -w; history -c; history -r"   # Sync history and reload it (respecting dups settings).
 alias ls="ls --color=auto"
 alias l="ls"
 alias ll="ls -lh"
@@ -78,13 +89,7 @@ alias v="vim"
 alias vi="vim"
 alias xclip="xclip -selection clipboard"
 
-# Tab completion
-[ -f /etc/bash_completion ] && . /etc/bash_completion
-complete -cf sudo   # Enable completion for sudo
-
 # Misc
-#set -o vi
 export EDITOR='vim'
 export VISUAL='vim'
 
-#[[ -s "/home/b-con/.rvm/scripts/rvm" ]] && source "/home/b-con/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
