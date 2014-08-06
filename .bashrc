@@ -42,7 +42,7 @@ PROMPT_COMMAND=bash_prompt_cmd
 # History settings
 HISTFILESIZE=100000
 HISTSIZE=100000
-HISTIGNORE="history:histsync"
+HISTIGNORE="history:histsync:exit:clear"
 HISTCONTROL="ignorespace:ignoredups"
 shopt -s histappend
 export HISTFILESIZE HISTSIZE HISTIGNORE
