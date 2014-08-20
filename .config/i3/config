@@ -178,7 +178,7 @@ mode "resize" {
 ############################################################
 
 bindsym $APP+space exec mygtkmenu /home/b-con/.config/mygtkmenu.conf
-bindsym $APP+b exec spacefm /home/b-con/Desktop
+bindsym $APP+b exec pcmanfm /home/b-con/Desktop
 bindsym $APP+c exec speedcrunch
 bindsym $APP+e exec geany
 bindsym $APP+l exec xscreensaver-command -lock
