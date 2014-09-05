@@ -11,7 +11,7 @@ umask 0022
 
 # Start X if logging on locally
 if [[ -z "$DISPLAY" ]] && [[ $(tty) = "/dev/tty1" ]]; then
-	xinit   #startx
+	startx
 	# Do not logout, exiting X may not imply desire to logout
 fi
 

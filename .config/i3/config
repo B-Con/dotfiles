@@ -205,7 +205,7 @@ assign [title="Hulu Desktop"] $WORKSPACE_MEDIA
 assign [title="k9copy"] $WORKSPACE_MEDIA
 
 for_window [title="Clementine image viewer"] floating enable
-
+for_window [class="Steam"] floating enable
 #for_window [class="firefox"] layout tabbed
 
 #############################################################
