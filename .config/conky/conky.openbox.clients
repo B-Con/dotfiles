@@ -1,0 +1,43 @@
+own_window yes
+own_window_hints undecorated,below,sticky,skip_pager,skip_taskbar
+own_window_title Beacon
+# normal, desktop, override
+own_window_type desktop 
+
+own_window_transparent yes
+background no
+double_buffer yes
+use_spacer right
+use_xft yes
+update_interval 6.0
+maximum_width 250
+minimum_size 250
+draw_shades no
+draw_outline no # amplifies text if yes
+draw_borders no
+draw_graph_borders yes
+uppercase no # set to yes if you want all text to be in uppercase
+stippled_borders 1
+border_margin 10
+border_width 1
+default_color ffffff
+default_shade_color white #gray
+default_outline_color #ffffff
+own_window_hints below
+alignment top_left
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+gap_x 295
+gap_y 240
+override_utf8_locale yes
+xftfont Telegraphem:size=8
+xftalpha 0.5
+total_run_times 0
+no_buffers yes
+cpu_avg_samples 1 # 1 = disable avg sampling
+
+
+TEXT
+${font Telegraphem:size=9}${color dddddd}Network Clients ${hr 2} ${font}${color}
+${font}${color}${exec /usr/local/bin/sysstat --network --programs}

@@ -1,0 +1,71 @@
+own_window yes
+own_window_hints undecorated,below,sticky,skip_pager,skip_taskbar
+own_window_title Beacon
+# normal, desktop, override
+own_window_type desktop 
+
+own_window_transparent yes
+background no
+double_buffer yes
+use_spacer right
+use_xft yes
+update_interval 3.0
+maximum_width 250
+draw_shades no
+draw_outline no # amplifies text if yes
+draw_borders no
+draw_graph_borders yes
+uppercase no # set to yes if you want all text to be in uppercase
+stippled_borders 1
+border_margin 10
+border_width 1
+default_color ffffff
+default_shade_color white #gray
+default_outline_color #ffffff
+own_window_hints below
+alignment top_left
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+gap_x 15
+gap_y 15
+override_utf8_locale yes
+xftfont Telegraphem:size=8
+xftalpha 0.5
+total_run_times 0
+no_buffers yes
+cpu_avg_samples 1 # 1 = disable avg sampling
+
+
+TEXT
+${font Telegraphem:size=9}${color dddddd}Arch Linux ${hr 2} ${font}${color}
+  Kernel: ${alignr}$kernel - $machine
+  Host: ${alignr}$nodename
+  Uptime: ${alignr}$uptime
+  Processes: ${alignr}${exec /usr/local/bin/sysstat --proc-count}
+
+${font Telegraphem:size=9}${color dddddd}CPU ${hr 2} ${font}${color}
+  ${freq_g cpu1}Ghz     -     ${cpu cpu1}% ${goto 145}${freq_g cpu2}Ghz     -     ${cpu cpu2}%
+  ${cpubar cpu1 7,118} ${cpubar cpu2 7,118}
+  ${freq_g cpu3}Ghz     -     ${cpu cpu3}% ${goto 145}${freq_g cpu4}Ghz     -     ${cpu cpu4}%
+  ${cpubar cpu3 7,118} ${cpubar cpu4 7,118}
+  ${top name 1} ${alignc} ${alignr} ${top cpu 1}%
+  ${top name 2} ${alignc} ${alignr} ${top cpu 2}%
+  ${top name 3} ${alignc} ${alignr} ${top cpu 3}%
+  ${top name 4} ${alignc} ${alignr} ${top cpu 4}%
+  ${top name 5} ${alignc} ${alignr} ${top cpu 5}%
+
+${font Telegraphem:size=9}${color dddddd}RAM ${hr 2} ${font}${color}
+  $mem  /  $memmax ${alignr}$memperc%
+  ${membar 7,240}
+  ${top_mem name 1} ${alignr} ${top_mem mem 1}%
+  ${top_mem name 2} ${alignr} ${top_mem mem 2}%
+  ${top_mem name 3} ${alignr} ${top_mem mem 3}%
+  ${top_mem name 4} ${alignr} ${top_mem mem 4}%
+  ${top_mem name 5} ${alignr} ${top_mem mem 5}%
+
+${font Telegraphem:size=9}${color dddddd}NETWORK ${hr 2} ${font}${color}
+  IP Address: ${alignr}${addr eth0}
+  Download: ${alignr}${downspeedf eth0}KB/s
+  Upload: ${alignr}${upspeedf eth0}KB/s
+  TCP Connections: ${alignr}${tcp_portmon 1 65535 count} 

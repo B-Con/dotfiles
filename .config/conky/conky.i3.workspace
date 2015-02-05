@@ -1,0 +1,20 @@
+background no
+use_xft yes
+# xftfont 123:size=8
+out_to_console yes
+out_to_x no
+update_interval 3
+total_run_times 0
+# own_window yes
+# own_window_type dock
+# own_window_transparent yes
+double_buffer yes
+border_inner_margin 0
+border_outer_margin 0
+use_spacer none
+if_up_strictness address
+short_units yes
+
+TEXT
+^fg(\#33aadd)OS: ^fg()Linux ${kernel} - ${machine}   ^fg(\#33aadd)Uptime: ^fg()${uptime}   ^fg(\#33aadd)CPU: ^fg()${cpu cpu0}% (${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${cpu cpu4}%)   ^fg(\#33aadd)RAM: ^fg()${mem} / ${memmax}   ^fg(\#33aadd)Processes: ^fg()${processes}   ^fg(\#33aadd)Date: ^fg()${time %Y %b %d}   ^fg(\#33aadd)Time: ^fg()${time %H:%M}  
+#^pa(443)^fg()CPU $cpu% · ^pa(508)/ ${fs_free /}/${fs_size /} · ^pa(605)/home ${fs_free /home}/${fs_size /home}^pa(727) · Power: ${execi 2 acpi -a | grep -o "on-line"}^fg(red)${execi 2 acpi -a | grep -o "off-line"}^fg() · ^pa(840)Pacman: ${execpi 60 /home/archman/.scripts/pacupdate.pl} · ^pa(920)Gmail: ${execpi 60 /home/archman/.scripts/gmailcheck} · ^pa(984)^fg(white)${time %H:%M}
