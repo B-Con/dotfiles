@@ -22,7 +22,6 @@ xmodmap ~/.xmodmaprc &
 				deluge-web &
 			#fi
 			deluge-gtk &
-			xscreensaver -no-splash &
 		;;
 		"beacon-laptop")
 			xset m 3/1 3 &
@@ -35,5 +34,5 @@ xmodmap ~/.xmodmaprc &
 } &> /dev/null &
 
 #exec openbox-session
-#exec i3 --force-xinerama -V -d all | grep -v "_NET_WM_NAME" > /tmp/i3-log 2>&1
-exec i3 --force-xinerama -V -d all > /tmp/i3.log 2>&1
+#exec i3 --force-xinerama -V -d all > /tmp/i3.log 2>&1
+exec i3 -V -d all > /tmp/i3.log 2>&1

@@ -252,7 +252,7 @@ bar {
 	#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 	mode dock
 	position bottom
-	tray_output xinerama-0
+	tray_output primary
 	workspace_buttons yes
 	
 	colors {
@@ -260,7 +260,6 @@ bar {
 		statusline         #ffffff
 
 		focused_workspace  #ffffff #737373
-		#focused_workspace  #ffffff #33aadd
 		#active_workspace  irrelevent for single-monitor
 		inactive_workspace #ffffff #202020
 		urgent_workspace   #ffffff #202020
