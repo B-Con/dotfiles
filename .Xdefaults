@@ -29,8 +29,12 @@ URxvt*iconName: rxvt-unicode
 ! VI doesn't behave right with this, change to XTERM?
 URxvt*termName: rxvt-256color
 URxvt*pastableTabs: True
-URxvt*urlLauncher: firefox
 URxvt*urgentOnBell: True
+
+# Underline links and open them.
+URxvt*perl-ext-common: default,matcher
+URxvt*url-launcher: firefox
+URxvt*matcher.button: 1
 
 # Transparency
 URxvt*transparent: True
