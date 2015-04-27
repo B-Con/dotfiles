@@ -16,5 +16,5 @@ if [[ -z "$DISPLAY" ]] && [[ $(tty) = "/dev/tty1" ]]; then
 fi
 
 # Always keep a screen session
-#screen -d -m -S General
+#screen -d -m -S misc
 
