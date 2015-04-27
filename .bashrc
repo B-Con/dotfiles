@@ -45,6 +45,7 @@ HISTSIZE=100000
 HISTIGNORE="history:histsync:exit:clear"
 HISTCONTROL="ignorespace:ignoredups"
 shopt -s histappend
+shopt -s checkwinsize
 export HISTFILESIZE HISTSIZE HISTIGNORE
 
 # Tab completion
@@ -60,7 +61,7 @@ source /usr/bin/virtualenvwrapper_lazy.sh
 alias arp="arp -n"  # Don't resolve names, can sometimes take forever
 alias df="df -h"
 alias diff="colordiff"
-alias du-dir="du -ms"  # Megabytes, summarize only the top directory
+alias du-dir="du -msh"  # Megabytes, summarize only the top directory
 alias free="free -h"
 alias fuser="fuser -v"
 alias g="git"
