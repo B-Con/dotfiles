@@ -25,7 +25,7 @@ bash_prompt_cmd() {
 	local startpos=""
 
 	PROMPT_PWD="${PWD/#$HOME/\~}"
-	local overflow_prefix="..."
+	local overflow_prefix="…"   # Unicode 0x2026
 	local pwdlen=${#PROMPT_PWD}
 	local maxpwdlen=$(( COLUMNS - ps_len ))
 	# Sometimes COLUMNS isn't initialized, if it isn't, fall back to 80.
