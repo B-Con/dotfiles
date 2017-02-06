@@ -185,7 +185,7 @@ bindsym $APP+l exec xscreensaver-command -lock
 bindsym $APP+r exec dmenu_run
 bindsym $APP+t exec urxvt
 bindsym $APP+v exec gnome-alsamixer
-bindsym $APP+w exec firefox
+bindsym $APP+w exec chromium
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3dB-
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 3dB+
 bindsym XF86AudioMute exec amixer -q set Master toggle
@@ -193,6 +193,7 @@ bindsym XF86Sleep exec xset dpms force off
 bindsym Print exec screenshot
 
 assign [class="Firefox"] $WORKSPACE_WEB
+assign [class="chromium"] $WORKSPACE_WEB
 assign [class="Deluge"] $WORKSPACE_WEB
 #assign [class="Filezilla"] $WORKSPACE_WEB
 
