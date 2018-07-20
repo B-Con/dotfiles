@@ -33,12 +33,13 @@ URxvt*urgentOnBell: True
 
 # Underline links and open them.
 URxvt*perl-ext-common: default,matcher
-URxvt*url-launcher: firefox
+URxvt*url-launcher: chromium
 URxvt*matcher.button: 1
 
-# Transparency
+# Background (pseudo-transparency)
+URxvt*inheritPixmap: True
 URxvt*transparent: True
-URxvt*shading: 20
+URxvt*shading: 10
 #URxvt*fading: 10
 
 # Scrolling
@@ -50,19 +51,18 @@ URxvt*scrollTtyOutput: False
 URxvt*scrollWithBuffer: False
 URxvt*scrollTtyKeypress: True
 URxvt*scrollstyle: rxvt 
-URxvt*saveLines: 10000
+URxvt*saveLines: 100000
 URxvt*searchable-scrollback: C-S-s
 
 # Fonts
-#URxvt*font: xft:Andale Mono-8:antialias=false
-#URxvt*font: xft:Bitstream Vera Sans Mono:size=8
-#URxvt*font: xft:terminus:size=8
 URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-#URxvt*font: xft:Monospace:size=8:antialias=true:bold:hinting=true:ultracondensed
 URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:hinting=true
 URxvt*italicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
 URxvt*bolditalicFont: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
 #URxvt*font: xft:Bitstream Vera Sans Mono:size=10
+#URxvt*font: xft:Andale Mono-8:antialias=false
+#URxvt*font: xft:terminus:size=8
+#URxvt*font: xft:Monospace:size=8:antialias=true:bold:hinting=true:ultracondensed
 #URxvt*boldFont: xft:Bitstream Vera Sans Mono:style=Bold:size=10
 #URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:size=10
 

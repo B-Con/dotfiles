@@ -181,8 +181,9 @@ bindsym $APP+space exec mygtkmenu /home/b-con/.config/mygtkmenu.conf
 bindsym $APP+b exec pcmanfm /home/b-con/desktop
 bindsym $APP+c exec speedcrunch
 bindsym $APP+e exec geany
+#bindsym $APP+l exec i3lock -i ~/.themes/wallpaper
 bindsym $APP+l exec xscreensaver-command -lock
-bindsym $APP+r exec dmenu_run
+bindsym $APP+r exec i3-dmenu-desktop
 bindsym $APP+t exec urxvt
 bindsym $APP+v exec gnome-alsamixer
 bindsym $APP+w exec chromium
@@ -202,12 +203,9 @@ assign [class="Clementine"] $WORKSPACE_MEDIA
 assign [class="Spotify"] $WORKSPACE_MEDIA
 assign [class="Kid3"] $WORKSPACE_MEDIA
 assign [class="KolourPaint"] $WORKSPACE_MEDIA
-assign [title="Hulu Desktop"] $WORKSPACE_MEDIA
 assign [title="k9copy"] $WORKSPACE_MEDIA
 
-for_window [title="Clementine image viewer"] floating enable
 for_window [class="Steam"] floating enable
-#for_window [class="firefox"] layout tabbed
 
 #############################################################
 # WM controls ($WM)
@@ -250,23 +248,26 @@ client.urgent            #000000 #737373 #ffffff
 ############################################################
 
 bar {
-	#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+	font pango:DejaVu Sans Mono, Icons 9
 	mode dock
 	position bottom
-	tray_output primary
 	workspace_buttons yes
+	status_command i3status
+	#tray_output primary
 	
 	colors {
 		background         #000000
 		statusline         #ffffff
 
+		#focused_workspace  #000000 #cccccc
 		focused_workspace  #ffffff #737373
 		#active_workspace  irrelevent for single-monitor
-		inactive_workspace #ffffff #202020
-		urgent_workspace   #ffffff #202020
+		#inactive_workspace #ffffff #000000
+		inactive_workspace #aaaaaa #202020
+		urgent_workspace   #ffffff #222222
 	}
 }
 
 # Need to restart these whenever i3 is reconfigured. Also handles normal "start".
-exec_always desktop-decorations i3 restart
+#exec_always ~/bin/desktop-decorations i3 restart
 

@@ -1,0 +1,14 @@
+{
+	"licensed": false,
+	"packages":
+	[
+		"CTags",
+		"Package Control"
+	],
+	"startup_sec": 0.20708,
+	"syntax":
+	{
+		"CSS": 3
+	},
+	"time": 1410764435
+}

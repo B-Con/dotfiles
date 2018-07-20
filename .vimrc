@@ -71,7 +71,7 @@ set nowritebackup
 set mouse=a      " Mouse scrolling
 "set textwidth=96 " Hard wrap
 if exists('+colorcolumn')
-	set colorcolumn=79
+	set colorcolumn=80
 endif
 
 " Press Enter to clear last search.

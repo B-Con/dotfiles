@@ -20,6 +20,7 @@
 		"env",
 		"env3"
 	],
+	"font_size": 9,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -28,7 +29,6 @@
 	],
 	"rulers":
 	[
-		79,
 		99
 	],
 	"scroll_past_end": false,
@@ -37,5 +37,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true,
-	"wrap_width": 80
+	"wrap_width": 100
 }

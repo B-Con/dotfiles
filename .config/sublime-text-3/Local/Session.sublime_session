@@ -1,0 +1,959 @@
+{
+	"folder_history":
+	[
+		"/home/b-con/data/projects/others/deluge/deluge",
+		"/media/storage/documents/online courses/CoursEra - 2014Q2 (Summer) - Machine Learning (Stanford)/exercises/mlclass-ex3-006/mlclass-ex3",
+		"/media/storage/documents/online courses/CoursEra - 2014Q2 (Summer) - Machine Learning (Stanford)/exercises/mlclass-ex4-006/mlclass-ex4",
+		"/home/b-con/Desktop/interview-prep",
+		"/home/b-con/data/projects/my-code/matasano-crypto-challenges",
+		"/home/b-con/data/projects/others/linux"
+	],
+	"last_version": 3143,
+	"last_window_id": 15,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 1040.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"local_",
+						"local_only_expected"
+					],
+					[
+						"mism",
+						"mismatched_expected"
+					],
+					[
+						"remote_",
+						"remote_only_expected"
+					],
+					[
+						"CHECKSUM",
+						"CHECKSUM_TAG_PREFIX_NORMALIZED"
+					],
+					[
+						"CHEC",
+						"CHECKSUM_TAG_PREFIX"
+					],
+					[
+						"remote",
+						"remote_checksum"
+					],
+					[
+						"getRe",
+						"getRemotePhotoChecksum"
+					],
+					[
+						"getLocal",
+						"getLocalPhotoChecksum"
+					],
+					[
+						"block",
+						"block_size"
+					],
+					[
+						"prof",
+						"profile_token"
+					],
+					[
+						"wor",
+						"verify_work_factor"
+					],
+					[
+						"decrypt_",
+						"decrypt_aes_ecb"
+					],
+					[
+						"rand",
+						"gen_rand_str"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 72.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control:in",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 449.0
+			},
+			"console":
+			{
+				"height": 153.0,
+				"history":
+				[
+					"sublime.log_commands(True)",
+					"showPanel",
+					"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) ",
+					" import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/b-con/data/projects/my-code/flickrsyncr/bin/flickrsyncr.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/bin/flickrsyncr",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/flickrsync.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/requirements.txt",
+				"/home/b-con/data/projects/my-code/rebuild/rebuild",
+				"/home/b-con/data/projects/my-code/getfit/design.md",
+				"/home/b-con/data/projects/my-code/flickrsync/tests/test.sh",
+				"/home/b-con/data/projects/my-code/flickrsync/tests/test.py",
+				"/home/b-con/data/projects/my-code/flickrsync/flickrsync/__init__.py",
+				"/home/b-con/data/projects/my-code/flickrsync/flickrsync/flickrsync.py",
+				"/tmp/flickrsync.log",
+				"/home/b-con/data/projects/my-code/flickrsync/tests/test.log",
+				"/home/b-con/data/projects/my-code/flickrsync/test.py",
+				"/home/b-con/data/projects/my-code/flickrsync/flickrsync.py",
+				"/home/b-con/data/projects/my-code/sync-with-flickr-album/t.py",
+				"/home/b-con/data/projects/my-code/sync-with-flickr-album/t2.py",
+				"/home/b-con/data/projects/my-themes/myanimelist/MAL-soft-green-RJ.css",
+				"/opt/sublime_text_3/changelog.txt",
+				"/tmp/java/One.java",
+				"/home/b-con/data/projects/my-themes/myanimelist/MAL-custom-theme-251619.css",
+				"/media/storage/documents/online courses/CoursEra - 2014Q2 (Summer) - Machine Learning (Stanford)/exercises/mlclass-ex4-006/mlclass-ex4/nnCostFunction.m",
+				"/tmp/theme.css",
+				"/home/b-con/data/projects/my-code/my-notepad-info/api/api.php",
+				"/home/b-con/data/projects/my-code/my-notepad-info/api/api-lib.php",
+				"/tmp/server.c",
+				"/tmp/ELEVATOR.CPP",
+				"/tmp/ELEVSIM.CPP",
+				"/home/b-con/Desktop/interview-prep/knapsack.cpp",
+				"/home/b-con/Desktop/interview-prep/std-cheetsheat",
+				"/home/b-con/Desktop/interview-prep/quicksort-in-place.cpp",
+				"/home/b-con/Desktop/interview-prep/compare_trees_swapped_children.cpp",
+				"/home/b-con/Desktop/interview-prep/merge-sort.py",
+				"/tmp/struct.cpp",
+				"/usr/local/bin/local/do-dyn-dns.py",
+				"/home/b-con/Desktop/t.c",
+				"/tmp/struct.c",
+				"/tmp/t.c",
+				"/tmp/t1.c",
+				"/tmp/t.py",
+				"/home/b-con/data/projects/my-code/grep-test/jacob.cpp",
+				"/tmp/test.c",
+				"/tmp/t.cpp",
+				"/tmp/aes.c",
+				"/home/b-con/Desktop/interview-prep/unordered_map.cpp",
+				"/tmp/test.cpp",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/set1.py",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/core.py",
+				"/tmp/test.py",
+				"/home/b-con/data/projects/others/linux/include/linux/random.h",
+				"/home/b-con/data/projects/others/linux/include/linux/input.h",
+				"/home/b-con/data/projects/others/linux/drivers/input/input.c",
+				"/home/b-con/data/projects/others/linux/drivers/char/random.c",
+				"/home/b-con/data/projects/others/linux/arch/x86/boot/compressed/misc.c",
+				"/home/b-con/data/projects/others/linux/kernel/panic.c",
+				"/home/b-con/data/projects/others/linux/lib/bust_spinlocks.c",
+				"/home/b-con/data/projects/others/linux/lib/sha1.c",
+				"/home/b-con/data/projects/others/linux/include/linux/bitops.h",
+				"/home/b-con/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/b-con/data/projects/others/linux/tools/virtio/linux/types.h",
+				"/home/b-con/data/projects/others/linux/arch/s390/kernel/cache.c",
+				"/home/b-con/data/projects/others/linux/include/uapi/asm-generic/fcntl.h",
+				"/home/b-con/data/projects/others/linux/include/linux/wait.h",
+				"/home/b-con/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/b-con/.config/sublime-text-3/Packages/User/CTags.sublime-settings",
+				"/home/b-con/.config/sublime-text-3/Packages/CTags/Default.sublime-keymap",
+				"/home/b-con/data/projects/others/linux/include/linux/spinlock.h",
+				"/home/b-con/.config/sublime-text-3/Packages/CTags/CTags.sublime-settings",
+				"/home/b-con/data/projects/others/linux/arch/x86/kernel/entry_32.S",
+				"/home/b-con/data/projects/others/linux/arch/mips/kernel/entry.S",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/README.md",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/set2.py",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/misc.py",
+				"/home/b-con/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+				"/home/b-con/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+				"/home/b-con/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 39.0
+			},
+			"find_in_files":
+			{
+				"height": 90.0,
+				"where_history":
+				[
+					"/home/b-con/data/projects/others/linux"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"argparse",
+					"flickr.sync",
+					"flickrsync.sync(",
+					"CHECKSUM_TAG_PREFIX",
+					"Local files:",
+					"local files:",
+					"%s",
+					"logger.debug",
+					"RemotePhoto",
+					"settings.dryrun",
+					"os.",
+					"checksum_prefix",
+					"deletePhotos",
+					"LocalPhoto",
+					"comparePhotoChecksum",
+					"comparepho",
+					"remoteDownload",
+					"getRemotePhotos",
+					"self.",
+					"Settings",
+					"0033aa",
+					"caccce",
+					"2d2f31",
+					"notepad_data",
+					"MAX_NOTEPAD_SIZE",
+					"siteIsReadOnly",
+					"babcbe",
+					"dadcde",
+					"deque",
+					"));",
+					"total",
+					"strip_padding",
+					"padding_size",
+					"encrypt_aes_cbc",
+					"strip_padding",
+					"pad_pkcs7",
+					"num_to_add",
+					"state",
+					"add_input_randomness",
+					"extract_entropy",
+					"random_read",
+					"fast_pool",
+					"add_interrupt_randomness",
+					"add_interrupt_random",
+					"ppos",
+					"random_read",
+					"add_device_randomness",
+					"buf",
+					"random_read",
+					"sha_transform",
+					"extract_buf",
+					"account",
+					"trace_extract_entropy",
+					"extract_entropy",
+					"trace_extract_entropy_user",
+					"random_read",
+					"read_random",
+					"const_input",
+					"modified_ct",
+					"]\n",
+					"profile_token",
+					"decrypt_profile",
+					"test_email",
+					"verify_work_factor",
+					"is_correct",
+					"Exception",
+					"313131",
+					"decrypt_aes_cbc",
+					"303030",
+					"aaaaaa",
+					"input_string",
+					"pad_pkcs7",
+					"WORST_XOR_KEY_SCORE",
+					"tab",
+					"tab_completion",
+					"tab",
+					"_tab",
+					"o",
+					"alt+tab",
+					"alt+",
+					"key",
+					"temp_ct",
+					"ctrl+d",
+					"extract_hidden_msg",
+					"Encrypt",
+					"encrypt",
+					"extract_hidden_msg",
+					"calculated_dist",
+					"bin_string",
+					"xor_crypt",
+					"score_ascii_plaintext",
+					"guess",
+					"oracle",
+					"xor_crypt",
+					"b6b7ba",
+					"#333333",
+					"args"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"sync(",
+					"0000cc",
+					"dbdddf",
+					"222426",
+					"caccce",
+					"babcbe",
+					"controlled_pt",
+					"parsed_token",
+					"injected_email",
+					"verify_work",
+					"success",
+					"313335",
+					"313131",
+					"aaabae",
+					"aaaaaa",
+					"#303030",
+					"#2d2d2d"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 392.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 170.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+				"max_columns": 2
+			}
+		},
+		"new_window_width": 956.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"p_",
+						"p_graph"
+					],
+					[
+						"UT",
+						"UTXO"
+					],
+					[
+						"prev",
+						"prevTxHash"
+					],
+					[
+						"UTXOP",
+						"UTXOPool"
+					],
+					[
+						"TEST",
+						"TEST_CONFIG_DIR"
+					],
+					[
+						"local",
+						"local_modified"
+					],
+					[
+						"flickr",
+						"flickrsyncr"
+					],
+					[
+						"api_",
+						"api_secret"
+					],
+					[
+						"creat",
+						"createChecksumTag"
+					],
+					[
+						"api",
+						"api_key"
+					],
+					[
+						"local_",
+						"local_only_expected"
+					],
+					[
+						"mism",
+						"mismatched_expected"
+					],
+					[
+						"remote_",
+						"remote_only_expected"
+					],
+					[
+						"CHECKSUM",
+						"CHECKSUM_TAG_PREFIX_NORMALIZED"
+					],
+					[
+						"CHEC",
+						"CHECKSUM_TAG_PREFIX"
+					],
+					[
+						"remote",
+						"remote_checksum"
+					],
+					[
+						"getRe",
+						"getRemotePhotoChecksum"
+					],
+					[
+						"getLocal",
+						"getLocalPhotoChecksum"
+					],
+					[
+						"block",
+						"block_size"
+					],
+					[
+						"prof",
+						"profile_token"
+					],
+					[
+						"wor",
+						"verify_work_factor"
+					],
+					[
+						"decrypt_",
+						"decrypt_aes_ecb"
+					],
+					[
+						"rand",
+						"gen_rand_str"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 72.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control:in",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 449.0
+			},
+			"console":
+			{
+				"height": 153.0,
+				"history":
+				[
+					"sublime.log_commands(True)",
+					"showPanel",
+					"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) ",
+					" import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/links",
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week4/Transaction.java",
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week4/Simulation.java",
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week4/Candidate.java",
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week4/CompliantNode.java",
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week4/Node.java",
+				"/media/tea/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week4/MaliciousNode.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/UTXO.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/UTXOPool.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/Transaction.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/TxHandler.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/TxHandler.java-3rdparty",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/TxHandler-3rdparty.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/build.sh",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/test.sh",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/Main.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/test/IsValidTest.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/test/UtxoTestSet.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/test/ValidationLists.java",
+				"/media/storage/documents/online courses/CoursEra - 2018Q1 (Spring) - Introduction to Crypto and Cryptocurrencies/homework/week1/Crypto.java",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/sync.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/settings.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/tests/test.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/__init__.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/general.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/tests/flickrsyncr-lib-test.log",
+				"/home/b-con/data/projects/my-code/flickrsyncr/README.rst",
+				"/home/b-con/data/projects/my-code/flickrsyncr/bin/flickrsyncr",
+				"/home/b-con/data/projects/my-code/flickrsyncr/tests/testdriver.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/tests/endtoend.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/tests/unit.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/setup.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/tests/test.sh",
+				"/home/b-con/data/projects/my-code/flickrsyncr/LICENSE",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/.gitignore",
+				"/home/b-con/data/projects/my-code/flickrsyncr/requirements.txt",
+				"/home/b-con/.config/flickrsyncr/config",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/flickrsyncr.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/bin/flickrsyncr.py",
+				"/home/b-con/data/projects/my-code/flickrsyncr/flickrsyncr/flickrsync.py",
+				"/home/b-con/data/projects/my-code/rebuild/rebuild",
+				"/home/b-con/data/projects/my-code/getfit/design.md",
+				"/home/b-con/data/projects/my-code/flickrsync/tests/test.sh",
+				"/home/b-con/data/projects/my-code/flickrsync/tests/test.py",
+				"/home/b-con/data/projects/my-code/flickrsync/flickrsync/__init__.py",
+				"/home/b-con/data/projects/my-code/flickrsync/flickrsync/flickrsync.py",
+				"/tmp/flickrsync.log",
+				"/home/b-con/data/projects/my-code/flickrsync/tests/test.log",
+				"/home/b-con/data/projects/my-code/flickrsync/test.py",
+				"/home/b-con/data/projects/my-code/flickrsync/flickrsync.py",
+				"/home/b-con/data/projects/my-code/sync-with-flickr-album/t.py",
+				"/home/b-con/data/projects/my-code/sync-with-flickr-album/t2.py",
+				"/home/b-con/data/projects/my-themes/myanimelist/MAL-soft-green-RJ.css",
+				"/opt/sublime_text_3/changelog.txt",
+				"/tmp/java/One.java",
+				"/home/b-con/data/projects/my-themes/myanimelist/MAL-custom-theme-251619.css",
+				"/media/storage/documents/online courses/CoursEra - 2014Q2 (Summer) - Machine Learning (Stanford)/exercises/mlclass-ex4-006/mlclass-ex4/nnCostFunction.m",
+				"/tmp/theme.css",
+				"/home/b-con/data/projects/my-code/my-notepad-info/api/api.php",
+				"/home/b-con/data/projects/my-code/my-notepad-info/api/api-lib.php",
+				"/tmp/server.c",
+				"/tmp/ELEVATOR.CPP",
+				"/tmp/ELEVSIM.CPP",
+				"/home/b-con/Desktop/interview-prep/knapsack.cpp",
+				"/home/b-con/Desktop/interview-prep/std-cheetsheat",
+				"/home/b-con/Desktop/interview-prep/quicksort-in-place.cpp",
+				"/home/b-con/Desktop/interview-prep/compare_trees_swapped_children.cpp",
+				"/home/b-con/Desktop/interview-prep/merge-sort.py",
+				"/tmp/struct.cpp",
+				"/usr/local/bin/local/do-dyn-dns.py",
+				"/home/b-con/Desktop/t.c",
+				"/tmp/struct.c",
+				"/tmp/t.c",
+				"/tmp/t1.c",
+				"/tmp/t.py",
+				"/home/b-con/data/projects/my-code/grep-test/jacob.cpp",
+				"/tmp/test.c",
+				"/tmp/t.cpp",
+				"/tmp/aes.c",
+				"/home/b-con/Desktop/interview-prep/unordered_map.cpp",
+				"/tmp/test.cpp",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/set1.py",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/core.py",
+				"/tmp/test.py",
+				"/home/b-con/data/projects/others/linux/include/linux/random.h",
+				"/home/b-con/data/projects/others/linux/include/linux/input.h",
+				"/home/b-con/data/projects/others/linux/drivers/input/input.c",
+				"/home/b-con/data/projects/others/linux/drivers/char/random.c",
+				"/home/b-con/data/projects/others/linux/arch/x86/boot/compressed/misc.c",
+				"/home/b-con/data/projects/others/linux/kernel/panic.c",
+				"/home/b-con/data/projects/others/linux/lib/bust_spinlocks.c",
+				"/home/b-con/data/projects/others/linux/lib/sha1.c",
+				"/home/b-con/data/projects/others/linux/include/linux/bitops.h",
+				"/home/b-con/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/b-con/data/projects/others/linux/tools/virtio/linux/types.h",
+				"/home/b-con/data/projects/others/linux/arch/s390/kernel/cache.c",
+				"/home/b-con/data/projects/others/linux/include/uapi/asm-generic/fcntl.h",
+				"/home/b-con/data/projects/others/linux/include/linux/wait.h",
+				"/home/b-con/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/b-con/.config/sublime-text-3/Packages/User/CTags.sublime-settings",
+				"/home/b-con/.config/sublime-text-3/Packages/CTags/Default.sublime-keymap",
+				"/home/b-con/data/projects/others/linux/include/linux/spinlock.h",
+				"/home/b-con/.config/sublime-text-3/Packages/CTags/CTags.sublime-settings",
+				"/home/b-con/data/projects/others/linux/arch/x86/kernel/entry_32.S",
+				"/home/b-con/data/projects/others/linux/arch/mips/kernel/entry.S",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/README.md",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/set2.py",
+				"/home/b-con/data/projects/my-code/matasano-crypto-challenges/misc.py",
+				"/home/b-con/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+				"/home/b-con/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+				"/home/b-con/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap"
+			],
+			"find":
+			{
+				"height": 39.0
+			},
+			"find_in_files":
+			{
+				"height": 90.0,
+				"where_history":
+				[
+					"/home/b-con/data/projects/others/linux"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"main",
+					"utxo",
+					"flickrsyncr.Settings(",
+					"config_dir='./'",
+					"expanduser",
+					"createalbum",
+					"Album ID",
+					"locally",
+					"TEST_PICS_DIR",
+					"pics3-sync",
+					"pics2-sync",
+					"pics3-orig",
+					"pics2-orig",
+					"pics1-sync",
+					"pics1-orig",
+					"compileTags",
+					"createAlbum",
+					"dry run mode",
+					"dryrun mode",
+					"values",
+					"config_dir",
+					"config_path",
+					"````",
+					"`",
+					"version",
+					"tag",
+					"machine",
+					"normalized",
+					"MismatchedPhoto",
+					"photosetDifferencesUnitTest4",
+					"flickrsync.",
+					"CHECKSUM_TAG_PREFIX",
+					"CHECKSUM_TAG_PREFIX ",
+					"flickrsync.RemotePhoto",
+					"flickrsync.LocalPhoto",
+					"Settings",
+					"dryrun mode",
+					"% (",
+					"API_KEY",
+					"PROJECT_NAME",
+					"argparse",
+					"flickr.sync",
+					"flickrsync.sync(",
+					"CHECKSUM_TAG_PREFIX",
+					"Local files:",
+					"local files:",
+					"%s",
+					"logger.debug",
+					"RemotePhoto",
+					"settings.dryrun",
+					"os.",
+					"checksum_prefix",
+					"deletePhotos",
+					"LocalPhoto",
+					"comparePhotoChecksum",
+					"comparepho",
+					"remoteDownload",
+					"getRemotePhotos",
+					"self.",
+					"Settings",
+					"0033aa",
+					"caccce",
+					"2d2f31",
+					"notepad_data",
+					"MAX_NOTEPAD_SIZE",
+					"siteIsReadOnly",
+					"babcbe",
+					"dadcde",
+					"deque",
+					"));",
+					"total",
+					"strip_padding",
+					"padding_size",
+					"encrypt_aes_cbc",
+					"strip_padding",
+					"pad_pkcs7",
+					"num_to_add",
+					"state",
+					"add_input_randomness",
+					"extract_entropy",
+					"random_read",
+					"fast_pool",
+					"add_interrupt_randomness",
+					"add_interrupt_random",
+					"ppos",
+					"random_read",
+					"add_device_randomness",
+					"buf",
+					"random_read",
+					"sha_transform",
+					"extract_buf",
+					"account",
+					"trace_extract_entropy",
+					"extract_entropy",
+					"trace_extract_entropy_user",
+					"random_read",
+					"read_random",
+					"const_input",
+					"modified_ct",
+					"]\n",
+					"profile_token",
+					"decrypt_profile",
+					"test_email",
+					"verify_work_factor",
+					"is_correct",
+					"Exception",
+					"313131",
+					"decrypt_aes_cbc",
+					"303030",
+					"aaaaaa",
+					"input_string",
+					"pad_pkcs7",
+					"WORST_XOR_KEY_SCORE",
+					"tab",
+					"tab_completion",
+					"tab",
+					"_tab",
+					"o",
+					"alt+tab",
+					"alt+",
+					"key",
+					"temp_ct",
+					"ctrl+d",
+					"extract_hidden_msg",
+					"Encrypt",
+					"encrypt",
+					"extract_hidden_msg",
+					"calculated_dist"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"config_dir=TEST_CONFIG_DIR",
+					"pics3-tmp",
+					"pics2-tmp",
+					"pics3",
+					"pics2",
+					"pics1-tmp",
+					"pics1",
+					"config_dir",
+					"``",
+					"flickrsyncr.``",
+					"flickrsyncr.",
+					"RemotePhoto",
+					"LocalPhoto",
+					"sync(",
+					"0000cc",
+					"dbdddf",
+					"222426",
+					"caccce",
+					"babcbe",
+					"controlled_pt",
+					"parsed_token",
+					"injected_email",
+					"verify_work",
+					"success",
+					"313335",
+					"313131",
+					"aaabae",
+					"aaaaaa",
+					"#303030",
+					"#2d2d2d"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,847,18,1916,1058,1920,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 42.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 392.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 170.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+				"max_columns": 2
+			},
+			"window_id": 12,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
