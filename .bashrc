@@ -49,7 +49,7 @@ bash_prompt_cmd_full() {
 	local CT="\[\e[38;5;45m\]"   # time
 	local CD="\[\e[38;5;45m\]"   # working directory
 	local CP="\[\e[38;5;47m\]$"  # prompt
-	[ $UID -eq "0" ] && CP="\[\e[38;5;160\]#" # root prompt
+	[ $UID -eq "0" ] && CP="\[\e[38;5;160m\]#" # root prompt
 	local CI=$RESET              # input
 	
 	# Add the first part of the prompt: username,host, and time
