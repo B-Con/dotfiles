@@ -76,7 +76,7 @@ bash_prompt_cmd_full() {
 	fi	
 	export PS1="${PS1_L1_1}${PROMPT_PWD}${PS1_L1_2}${PS1_L2}"
 }
-PS1='.:[\u@\h | \t | \w]:.\$ '
+PS1='.:[\u@\h | \t | \w]:.\n$ '
 if [[ "$TERM" =~ 256color ]]; then
 	PROMPT_COMMAND=bash_prompt_cmd_full
 fi
