@@ -53,13 +53,13 @@ bash_prompt_cmd_full() {
 	local CI=$RESET              # input
 	
 	# Add the first part of the prompt: username,host, and time
-	local PS1_L1_1="$B$BG$CS.:[ $CU`whoami`$CS@$CH`hostname`$CS | $CT\t$CS | $CD"
+	local PS1_L1_1="$B$BG$CS.:[ $CU$CACHE_WHOAMI$CS@$CH$CACHE_HOSTNAME$CS | $CT\t$CS | $CD"
 	local PS1_L1_2="$CS ]:.$RESET"
 	local PS1_L2="\n${CP} ${CI}"
 	
 	# Calculate the actual length of the line so far, minus the extra formatting.
 	# Just count the control codes in the PS1_L2_* vars above.
-	# The difference between the time and the string is 6
+	# The difference between the time and the string is 6.
 	local ps_len=$(( ${#PS1_L1_1} + ${#PS1_L1_2} + 6 - 15 * 9 ))
 
 	[[ ! $COLUMNS ]] && COLUMNS=80
@@ -70,7 +70,7 @@ bash_prompt_cmd_full() {
 	
 	# Truncate the PWD to fit.
 	if [ $pwdlen -gt $maxpwdlen ] ; then
-		local overflow_prefix="…"   # Unicode 0x2026
+		local overflow_prefix="…"   # U+2026
 		local startpos=$(( $pwdlen - maxpwdlen + ${#overflow_prefix} ))
 		PROMPT_PWD="${overflow_prefix}${PROMPT_PWD:$startpos:$maxpwdlen}"
 	fi	
@@ -79,6 +79,9 @@ bash_prompt_cmd_full() {
 PS1='.:[\u@\h | \t | \w]:.\n$ '
 if [[ "$TERM" =~ 256color ]]; then
 	PROMPT_COMMAND=bash_prompt_cmd_full
+	# Cache the username and hostname strings for the prompt.
+	export CACHE_WHOAMI=`whoami`
+	export CACHE_HOSTNAME=`hostname`
 fi
 
 # History settings
