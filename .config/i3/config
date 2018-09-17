@@ -194,11 +194,11 @@ bindsym XF86Sleep exec xset dpms force off
 bindsym Print exec screenshot
 
 assign [class="Firefox"] $WORKSPACE_WEB
-assign [class="chromium"] $WORKSPACE_WEB
+assign [class="Chromium"] $WORKSPACE_WEB
 assign [class="Deluge"] $WORKSPACE_WEB
 #assign [class="Filezilla"] $WORKSPACE_WEB
 
-assign [class="Vlc"] $WORKSPACE_MEDIA
+assign [class="vlc"] $WORKSPACE_MEDIA
 assign [class="Clementine"] $WORKSPACE_MEDIA
 assign [class="Spotify"] $WORKSPACE_MEDIA
 assign [class="Kid3"] $WORKSPACE_MEDIA
