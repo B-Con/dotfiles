@@ -16,4 +16,4 @@ if_up_strictness address
 short_units yes
 
 TEXT
-^fg(\#33aadd)OS: ^fg()Linux ${kernel} - ${machine}    ^fg(\#33aadd)Uptime: ^fg()${uptime}    ^fg(\#33aadd)CPU: ^fg()${cpu cpu0}% (${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${cpu cpu4}%)    ^fg(\#33aadd)RAM: ^fg()${mem} / ${memmax}    ^fg(\#33aadd)Processes: ^fg()${processes}    ^fg(\#33aadd)Date: ^fg()${time %Y %b %d}    ^fg(\#33aadd)Time: ^fg()${time %H:%M}  
+^fg(\#33aadd)OS: ^fg()Linux ${kernel}    ^fg(\#33aadd)Uptime: ^fg()${uptime}    ^fg(\#33aadd)CPU: ^fg()${cpu cpu0}% (${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${cpu cpu4}% ${cpu cpu5}% ${cpu cpu6}% ${cpu cpu7}% ${cpu cpu8}%)    ^fg(\#33aadd)RAM: ^fg()${mem} / ${memmax}    ^fg(\#33aadd)Processes: ^fg()${processes}    ^fg(\#33aadd)Date: ^fg()${time %Y %b %d}    ^fg(\#33aadd)Time: ^fg()${time %H:%M}  
