@@ -1,0 +1,103 @@
+#################################
+# Basic / General
+#################################
+
+Mrxvt.geometry: 80x24-0+0
+Mrxvt.title: MRXVT
+Mrxvt.iconName: /usr/share/pixmaps/urxvt.xpm
+
+#################################
+# Transparency
+#################################
+
+Mrxvt.transparent: True
+Mrxvt.transparentTabbar: True 
+Mrxvt.transparentMenubar: True
+Mrxvt.transparentScrollbar: False 
+Mrxvt.shading: 0
+
+#################################
+# Scrollbar
+#################################
+
+#Mrxvt.jumpScroll: True
+Mrxvt.scrollBar: True
+Mrxvt.scrollbar_right: True
+Mrxvt.scrollTtyOutput: False
+Mrxvt.scrollWithBuffer: False
+Mrxvt.saveLines: 10000
+Mrxvt.scrollTtyKeypress: True
+#Mrxvt.scrollbarThickness: 10
+#Mrxvt.scrollColor: #FFFFFF
+Mrxvt.scrollstyle: next
+   # rxvt,next,xterm
+
+#################################
+# Fonts
+#################################
+
+Mrxvt.xft: 1
+Mrxvt.font: Monospace
+#Bitstream Vera Sans Mono
+Mrxvt.xftSize: 8
+Mrxvt.xftAntialias: 1
+Mrxvt.xftWeight: bold 
+Mrxvt.xftWidth: ultracondensed
+Mrxvt.xftPFont: Bitstream Vera Sans
+Mrxvt.xftPSize: 8
+
+#################################
+# Colors
+#################################
+
+Mrxvt.background: #000000
+Mrxvt.foreground: #FFFFFF
+# Transparent # Mrxvt.tabBackground: #dadada
+Mrxvt.tabForeground: #ffffff
+# Transparent # Mrxvt.itabBackground: #000000
+Mrxvt.itabForeground: #ffffff
+Mrxvt.cursorColor: #FFFFFF
+Mrxvt.pointerColor: #ffffff
+Mrxvt.borderColor: #000000
+Mrxvt.scrollColor: #ffffff
+Mrxvt.troughColor: #000000
+Mrxvt.fading: 15
+Mrxvt.color0: #000000
+Mrxvt.color1: #aa0000
+Mrxvt.color2: #00aa00
+Mrxvt.color3: #aa5500
+Mrxvt.color4: #6666cc
+Mrxvt.color5: #aa00aa
+Mrxvt.color6: #00aaaa
+Mrxvt.color7: #aaaaaa
+Mrxvt.color8: #555555
+Mrxvt.color9: #ff5555
+Mrxvt.color10: #55ff55
+Mrxvt.color11: #ffff55
+Mrxvt.color12: #5555ff
+Mrxvt.color13: #ff55ff
+Mrxvt.color14: #55ffff
+Mrxvt.color15: #ffffff
+
+#################################
+# Tab / Menu bar
+#################################
+
+Mrxvt.bottomTabbar: True
+Mrxvt.maxTabWidth: 20
+Mrxvt.autohideTabbar: True 
+Mrxvt.protectSecondary: True
+Mrxvt.hideButtons: False 
+FullScreen.bottomTabbar: True
+Mrxvt.showMenu: False
+
+#################################
+# Border/window options
+#################################
+
+Mrxvt.internalBorder: 0
+Mrxvt.externalBorder: 0
+Mrxvt.cursorBlink: False
+#Mrxvt.borderLess: True
+
+# vim: set ft=mrxvtrc
