@@ -57,10 +57,13 @@ bash_prompt_cmd_full() {
 	local PS1_L1_2="$CS ]:.$RESET"
 	local PS1_L2="\n${CP} ${CI}"
 	
-	# Calculate the actual length of the line so far, minus the extra formatting.
-	# Just count the control codes in the PS1_L2_* vars above.
-	# The difference between the time and the string is 6.
-	local ps_len=$(( ${#PS1_L1_1} + ${#PS1_L1_2} + 6 - 15 * 9 ))
+	# Calculate the rendered length of the line so far.
+	# Take the length of the string, including formatting, then remove the
+	# control code characters and add in the length of the time:
+	# 	* 9 control sets 15 long each
+	# 	* 2 sets 9 long each
+	#	* the length of the output time is 6 longer than the time string
+	local ps_len=$(( ${#PS1_L1_1} + ${#PS1_L1_2} + 6 - 2 * 9 - 9 * 15 ))
 
 	[[ ! $COLUMNS ]] && COLUMNS=80
 	local maxpwdlen=$(( COLUMNS - ps_len ))
