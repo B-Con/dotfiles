@@ -270,4 +270,4 @@ bar {
 
 # Need to restart these whenever i3 is reconfigured. Also handles normal "start".
 #exec_always ~/bin/desktop-decorations i3 restart
-
+exec_always ~/bin/rotate-wallpaper.sh

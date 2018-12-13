@@ -15,7 +15,7 @@ xmodmap ~/.xmodmaprc &
 		"beacon")
 			xset m 1 3
 			numlockx on
-			xscreensaver -no-splash
+			#xscreensaver -no-splash
 		;;
 	esac
 	disown

@@ -27,6 +27,12 @@
 	[
 		"Vintage"
 	],
+	"material_theme_accent_cyan": true,
+	"material_theme_accent_scrollbars": true,
+	"material_theme_panel_separator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_separator": true,
 	"rulers":
 	[
 		99
@@ -34,6 +40,7 @@
 	"scroll_past_end": false,
 	"show_minimap": true,
 	"tab_size": 4,
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true,
