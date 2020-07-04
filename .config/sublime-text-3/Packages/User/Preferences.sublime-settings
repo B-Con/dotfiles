@@ -1,6 +1,8 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"auto_match_enabled": false,
+	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-google-dark.tmTheme",
+	"detect_indentation": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -20,9 +22,11 @@
 		"env",
 		"env3"
 	],
+	"font_options": "no_italic",
 	"font_size": 9,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -40,9 +44,10 @@
 	"scroll_past_end": false,
 	"show_minimap": true,
 	"tab_size": 4,
-	"theme": "Material-Theme-Darker.sublime-theme",
-	"translate_tabs_to_spaces": true,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": false,
 	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
 	"word_wrap": true,
 	"wrap_width": 100
 }
