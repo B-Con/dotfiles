@@ -1,11 +1,11 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontSize": 11,
+    "editor.fontSize": 12,
     "editor.insertSpaces": false,
     "editor.wordWrap": "on",
     "go.formatTool": "goimports",
     "workbench.iconTheme": "file-icons",
     "keyboard.dispatch": "keyCode",
     "go.useLanguageServer": true,
-    "vim.useCtrlKeys": false
+    "vim.useCtrlKeys": false,
+    "editor.minimap.scale": 2
 }

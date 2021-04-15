@@ -6,9 +6,7 @@
 ############################################################
 
 # ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-#font -*-verdana-medium-r-normal--17-120-100-100-p-*-iso8859-*
-#font -monotype-courier new-medium-r-normal--17-120-100-100-m-*-iso10646-1
+font pango:Noto Sans 10
 
 # The IPC interface allows programs like an external workspace bar
 # (i3-wsbar) or i3-msg (can be used to "remote-control" i3) to work.
@@ -23,22 +21,31 @@ set $APP   Mod4
 # Workspace naming variables
 # KEEP THEM MATCHED - i3 does straight string substitution
 # so there needs to be more than one set of variables
-set $WORKSPACE_1 1:main
-set $WORKSPACE_2 2:web
-set $WORKSPACE_3 3:media
-set $WORKSPACE_4 4:dev
-set $WORKSPACE_5 5:misc
+set $WORKSPACE_1 1:bg
+set $WORKSPACE_2 2:home
+set $WORKSPACE_3 3
+set $WORKSPACE_4 4
+set $WORKSPACE_5 5
 set $WORKSPACE_6 6
 set $WORKSPACE_7 7
 set $WORKSPACE_8 8
 set $WORKSPACE_9 9
-set $WORKSPACE_10 10
+set $WORKSPACE_0 0
 
-set $WORKSPACE_MAIN 1:main
-set $WORKSPACE_WEB 2:web
-set $WORKSPACE_MEDIA 3:media
-set $WORKSPACE_DEV 4:dev
-set $WORKSPACE_MISC 5:misc
+set $WORKSPACE_HOME 1:bg
+set $WORKSPACE_BG 2:home
+
+# Map workspaces to monitors.
+workspace "1:bg" output DP-0
+workspace "2:home" output primary
+workspace "3" output DP-0
+workspace "4" output primary
+workspace "5" output DP-0
+workspace "6" output primary
+workspace "7" output DP-0
+workspace "8" output primary
+workspace "9" output DP-0
+workspace "0" output primary
 
 #############################################################
 # Focus/display control ($FOCUS)
@@ -46,6 +53,9 @@ set $WORKSPACE_MISC 5:misc
 
 # Focus is given to whatever the mouse hovers over?
 focus_follows_mouse yes
+
+# Mouse jumps to monitor with new window?
+mouse_warping none
 
 # Default orientation, horizontal, vertical, or auto, for root workspace container
 default_orientation horizontal
@@ -78,11 +88,6 @@ bind $FOCUS+44 focus left
 bind $FOCUS+45 focus down
 bind $FOCUS+46 focus up
 bind $FOCUS+47 focus right
-# (alternatively, you can use the cursor keys:)
-#bindsym $FOCUS+Left h
-#bindsym $FOCUS+Down j
-#bindsym $FOCUS+Up k
-#bindsym $FOCUS+Right l
 
 # Workspaces ($FOCUS+1/2/…)
 bind $FOCUS+10 workspace $WORKSPACE_1
@@ -94,7 +99,7 @@ bind $FOCUS+15 workspace $WORKSPACE_6
 bind $FOCUS+16 workspace $WORKSPACE_7
 bind $FOCUS+17 workspace $WORKSPACE_8
 bind $FOCUS+18 workspace $WORKSPACE_9
-bind $FOCUS+19 workspace $WORKSPACE_10
+bind $FOCUS+19 workspace $WORKSPACE_0
 
 # Change the container's window borders
 bindsym $FOCUS+comma border normal
@@ -136,7 +141,7 @@ bind $WIN+15 move workspace $WORKSPACE_6
 bind $WIN+16 move workspace $WORKSPACE_7
 bind $WIN+17 move workspace $WORKSPACE_8
 bind $WIN+18 move workspace $WORKSPACE_9
-bind $WIN+19 move workspace $WORKSPACE_10
+bind $WIN+19 move workspace $WORKSPACE_0
 
 # Snap ($WIN+ m , . /)
 bindsym $WIN+m snap left
@@ -177,35 +182,25 @@ mode "resize" {
 # Application & window class keybindings ($APP)
 ############################################################
 
-bindsym $APP+space exec mygtkmenu /home/b-con/.config/mygtkmenu.conf
-bindsym $APP+b exec pcmanfm /home/b-con/desktop
+bindsym $APP+r exec i3-dmenu-desktop
+bindsym $APP+m exec mygtkmenu ~/.config/mygtkmenu.conf
+bindsym $APP+space exec jgmenu
+bindcode 75 exec xset dpms force off
+
+bindsym $APP+b exec thunar
 bindsym $APP+c exec speedcrunch
 bindsym $APP+e exec geany
-#bindsym $APP+l exec i3lock -i ~/.themes/wallpaper
-bindsym $APP+l exec xscreensaver-command -lock
-bindsym $APP+r exec i3-dmenu-desktop
+bindsym $APP+l exec --no-startup-id ~/bin/lock-screen.sh
+#bindsym $APP+l exec xscreensaver-command -lock
 bindsym $APP+t exec urxvt
-bindsym $APP+v exec gnome-alsamixer
 bindsym $APP+w exec chromium
-bindsym XF86AudioLowerVolume exec amixer -q set Master 3dB-
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 3dB+
-bindsym XF86AudioMute exec amixer -q set Master toggle
-bindsym XF86Sleep exec xset dpms force off
+bindsym $APP+1 exec ~/bin/i3-setup-workspace.sh 1
+
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
+bindsym XF86Sleep exec --no-startup-id xset dpms force off
 bindsym Print exec screenshot
-
-assign [class="Firefox"] $WORKSPACE_WEB
-assign [class="Chromium"] $WORKSPACE_WEB
-assign [class="Deluge"] $WORKSPACE_WEB
-#assign [class="Filezilla"] $WORKSPACE_WEB
-
-assign [class="vlc"] $WORKSPACE_MEDIA
-assign [class="Clementine"] $WORKSPACE_MEDIA
-assign [class="Spotify"] $WORKSPACE_MEDIA
-assign [class="Kid3"] $WORKSPACE_MEDIA
-assign [class="KolourPaint"] $WORKSPACE_MEDIA
-assign [title="k9copy"] $WORKSPACE_MEDIA
-
-for_window [class="Steam"] floating enable
 
 #############################################################
 # WM controls ($WM)
@@ -220,54 +215,71 @@ bindsym $WM+y restart
 # Reload the config inplace
 bindsym $WM+e reload
 
-# Poweroff the computer
+# Poweroff the
 bindsym $WM+s exec cmd-prompt "sudo shutdown -h now" "shutdown"
 
 # Restart the computer
 bindsym $WM+r exec cmd-prompt "sudo shutdown -r now" "reboot"
 
-############################################################
+############################################################a
 # Color scheme
 ############################################################
 
-# test: 000000 33aadd
-# old : 636363 636363
-#
-# class                  border  backgr. text
-client.focused           #000000 #737373 #ffffff
-client.focused_inactive  #000000 #202020 #aaaaaa
-client.unfocused         #000000 #202020 #aaaaaa
-client.urgent            #000000 #737373 #ffffff
-#client.urgent            #000000 #33aadd #ffffff
-#bar.focused              #444444 #33aadd #ffffff
-#bar.unfocused            #444444 #202020 #ffffff
-#bar.urgent               #444444 #33aadd #ffffff
+set_from_resource $focusedBorder        i3wm.focusedBorder        #222
+set_from_resource $focusedBg            i3wm.focusedBg            #555
+set_from_resource $focusedTxt           i3wm.focusedTxt           #fff
+set_from_resource $focusedIndicator     i3wm.focusedIndicator     #222
+set_from_resource $focusedChildBorder   i3wm.focusedChildBorder   #222
+
+set_from_resource $focusedInBorder      i3wm.focusedInBorder      #000
+set_from_resource $focusedInBg          i3wm.focusedInBg          #333
+set_from_resource $focusedInTxt         i3wm.focusedInTxt         #fff
+set_from_resource $focusedInIndicator   i3wm.focusedInIndicator   #000
+set_from_resource $focusedInChildBorder i3wm.focusedInChildBorder #000
+
+set_from_resource $unfocusedBorder      i3wm.unfocusedBorder      #000
+set_from_resource $unfocusedBg          i3wm.unfocusedBg          #333
+set_from_resource $unfocusedTxt         i3wm.unfocusedTxt         #fff
+set_from_resource $unfocusedIndicator   i3wm.unfocusedIndicator   #000
+set_from_resource $unfocusedChildBorder i3wm.unfocusedChildBorder #000
+
+set_from_resource $urgentBorder         i3wm.urgentBorder         #500
+set_from_resource $urgentBg             i3wm.urgentBg             #000
+set_from_resource $urgentTxt            i3wm.urgentTxt            #fff
+set_from_resource $urgentIndicator      i3wm.urgentIndicator      #500
+set_from_resource $urgentChildBorder    i3wm.urgentChildBorder    #500
+
+# class                  border           background   text          indicator           child_border
+client.focused           $focusedBorder   $focusedBg   $focusedTxt   $focusedIndicator   $focusedChildBorder
+client.focused_inactive  $focusedInBorder $focusedInBg $focusedInTxt $focusedInIndicator $focusedInChildBorder
+client.unfocused         $unfocusedBorder $unfocusedBg $unfocusedTxt $unfocusedIndicator $unfocusedChildBorder
+client.urgent            $urgentBorder    $urgentBg    $urgentTxt    $urgentIndicator    $urgentChildBorder
 
 ############################################################
 # Startup programs
 ############################################################
 
-bar {
-	font pango:DejaVu Sans Mono, Icons 9
-	mode dock
-	position bottom
-	workspace_buttons yes
-	status_command i3status
+#bar {
+#	font pango:DejaVu Sans Mono, Icons 9
+#	mode dock
+#	position bottom
+#	workspace_buttons yes
+#	status_command i3status
 	#tray_output primary
-	
-	colors {
-		background         #000000
-		statusline         #ffffff
+
+#	colors {
+#		background         #000000
+#		statusline         #ffffff
 
 		#focused_workspace  #000000 #cccccc
-		focused_workspace  #ffffff #737373
+#		focused_workspace  #ffffff #737373
 		#active_workspace  irrelevent for single-monitor
 		#inactive_workspace #ffffff #000000
-		inactive_workspace #aaaaaa #202020
-		urgent_workspace   #ffffff #222222
-	}
-}
+#		inactive_workspace #aaaaaa #202020
+#		urgent_workspace   #ffffff #222222
+#	}
+#}
 
-# Need to restart these whenever i3 is reconfigured. Also handles normal "start".
-#exec_always ~/bin/desktop-decorations i3 restart
-exec_always ~/bin/rotate-wallpaper.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/bin/rotate-wallpaper.sh
+
