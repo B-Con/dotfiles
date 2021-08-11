@@ -136,6 +136,7 @@ alias xclip="xclip -selection clipboard"
 # Misc
 export EDITOR='vim'
 export VISUAL='vim'
+export DIFFPROG='meld'
 
 # Go
 export GOPATH=$HOME/projects/go

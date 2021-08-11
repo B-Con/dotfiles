@@ -36,16 +36,16 @@ set $WORKSPACE_HOME 1:bg
 set $WORKSPACE_BG 2:home
 
 # Map workspaces to monitors.
-workspace "1:bg" output DP-0
-workspace "2:home" output primary
-workspace "3" output DP-0
-workspace "4" output primary
-workspace "5" output DP-0
-workspace "6" output primary
-workspace "7" output DP-0
-workspace "8" output primary
-workspace "9" output DP-0
-workspace "0" output primary
+workspace "1:bg" output primary
+workspace "2:home" output DP-0
+workspace "3" output primary
+workspace "4" output DP-0
+workspace "5" output primary
+workspace "6" output DP-0
+workspace "7" output primary
+workspace "8" output DP-0
+workspace "9" output primary
+workspace "0" output DP-0
 
 #############################################################
 # Focus/display control ($FOCUS)

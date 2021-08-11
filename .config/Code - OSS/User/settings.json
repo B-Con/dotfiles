@@ -1,11 +1,30 @@
 {
     "editor.fontSize": 12,
     "editor.insertSpaces": false,
-    "editor.wordWrap": "on",
     "go.formatTool": "goimports",
     "workbench.iconTheme": "file-icons",
     "keyboard.dispatch": "keyCode",
     "go.useLanguageServer": true,
     "vim.useCtrlKeys": false,
-    "editor.minimap.scale": 2
+    "editor.scrollBeyondLastColumn": 1,
+    "vs-kubernetes": {
+        "vscode-kubernetes.kubectl-path.linux": "/home/b-con/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.helm-path.linux": "/home/b-con/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.minikube-path.linux": "/home/b-con/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "html.autoClosingTags": false,
+    "explorer.confirmDelete": false,
+    "editor.minimap.showSlider": "always",
+    "explorer.confirmDragAndDrop": false,
+    "[markdown]": {
+        "editor.wordWrapColumn": 80,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.rulers": [80]
+    },
+    "[plaintext]": {
+        "editor.wordWrapColumn": 80,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.rulers": [80]
+    },
 }
