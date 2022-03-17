@@ -1,0 +1,17 @@
+font:
+  size: 9.0
+  normal:
+    family: DejaVu Sans Mono
+    style: Regular
+  italic:
+    family: DejaVu Sans Mono
+    style: Oblique
+  bold_italic:
+    family: DejaVu Sans Mono
+    style: Bold Oblique
+
+colors:
+  primary:
+    # Sync with system theme.
+    background: '#181b22'
+    foreground: '#e5eaf5'

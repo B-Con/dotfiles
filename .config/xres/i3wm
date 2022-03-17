@@ -1,0 +1,25 @@
+! Read by i3wm config.
+i3wm.focusedBorder:        highlightColor
+i3wm.focusedBg:            highlightColor
+i3wm.focusedTxt:           textColor
+i3wm.focusedIndicator:     highlightColor
+i3wm.focusedChildBorder:   highlightColor
+
+i3wm.focusedInBorder:      accentColor
+i3wm.focusedInBg:          backgroundColor
+i3wm.focusedInTxt:         textColor
+i3wm.focusedInIndicator:   backgroundColor
+i3wm.focusedInChildBorder: backgroundColor
+
+i3wm.unfocusedBorder:      accentColor
+i3wm.unfocusedBg:          backgroundColor
+i3wm.unfocusedTxt:         textColor
+i3wm.unfocusedIndicator:   backgroundColor
+i3wm.unfocusedChildBorder: backgroundColor
+
+i3wm.urgentBorder:         backgroundColor
+i3wm.urgentBg:             backgroundColor
+i3wm.urgentTxt:            alertHighlightColor
+i3wm.urgentIndicator:      backgroundColor
+i3wm.urgentChildBorder:    backgroundColor
+

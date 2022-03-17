@@ -80,12 +80,14 @@ bash_prompt_cmd_full() {
 	export PS1="${PS1_L1_1}${PROMPT_PWD}${PS1_L1_2}${PS1_L2}"
 }
 PS1='.:[ \u@\h | \t | \w ]:.\n$ '
-if [[ "$TERM" =~ 256color ]]; then
-	PROMPT_COMMAND=bash_prompt_cmd_full
-	# Cache the username and hostname strings for the prompt.
-	export CACHE_WHOAMI=`whoami`
-	export CACHE_HOSTNAME=`hostname`
-fi
+case "$TERM" in
+	*256color*|alacritty)
+		PROMPT_COMMAND=bash_prompt_cmd_full
+		# Cache the username and hostname strings for the prompt.
+		export CACHE_WHOAMI=`whoami`
+		export CACHE_HOSTNAME=`hostname`
+	;;
+esac
 
 # History settings
 HISTFILESIZE=100000
@@ -95,6 +97,8 @@ HISTCONTROL="ignorespace:ignoredups"
 shopt -s histappend
 shopt -s checkwinsize
 export HISTFILESIZE HISTSIZE HISTIGNORE
+# set revert-all-at-newline
+
 
 # Tab completion
 [ -f /etc/bash_completion ] && source /etc/bash_completion

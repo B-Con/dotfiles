@@ -3,13 +3,15 @@
 # ~/.xinitrc
 #
 
-xset dpms 0 0 900 &   # 15 minutes
-xset r rate 370 20 &
-xset m 1 0 &
+xset dpms 0 0 3600   # 60 minutes
+xset s 0 0
+xset s off
+xset r rate 370 20
+xset m 1 0
 xinput --set-prop 8 155 2 0 0 0 2 0 0 0 1
 xmodmap ~/.xmodmaprc
 xrdb ~/.Xresources
-xsetroot -solid "#181b22" &
+xsetroot -solid "#181b22"
 
 # Keyring
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)

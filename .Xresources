@@ -1,0 +1,16 @@
+! ~/.Xresources
+
+#define fontMono xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+#define fontMonoBold xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:hinting=true
+#define fontMonoItalic xft:DejaVu Sans Mono:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+#define fontMonoBoldItalic xft:DejaVu Sans Mono:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+
+#define backgroundColor     #181b22
+#define accentColor         #302d34
+#define highlightColor      #404550
+#define textColor           #e5eaf5
+#define alertHighlightColor #30c0e0
+
+#include ".config/xres/urxvt"
+#include ".config/xres/i3wm"
+#include ".config/xres/polybar"

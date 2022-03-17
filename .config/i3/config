@@ -189,10 +189,10 @@ bindcode 75 exec xset dpms force off
 
 bindsym $APP+b exec thunar
 bindsym $APP+c exec speedcrunch
-bindsym $APP+e exec geany
+bindsym $APP+e exec code
 bindsym $APP+l exec --no-startup-id ~/bin/lock-screen.sh
 #bindsym $APP+l exec xscreensaver-command -lock
-bindsym $APP+t exec urxvt
+bindsym $APP+t exec alacritty
 bindsym $APP+w exec chromium
 bindsym $APP+1 exec ~/bin/i3-setup-workspace.sh 1
 

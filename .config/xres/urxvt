@@ -1,0 +1,76 @@
+! General Window
+URxvt.title:          URXVT
+URxvt.depth:          24
+URxvt.geometry:       80x24-0+0
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
+URxvt.cursorBlink:    False
+! VI doesnt behave right with this, change to XTERM?
+URxvt.termName:       rxvt-256color
+URxvt.pastableTabs:   True
+URxvt.urgentOnBell:   True
+
+! Underline links and open them.
+URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.url-launcher:    chromium
+URxvt.matcher.button:  1
+
+! Copy/past behavior: Ctrl+Alt+{C,V} (did not get Ctrl+Shift to work).
+URxvt.keysym.C-M-c:       perl:clipboard:copy
+URxvt.keysym.C-M-v:       perl:clipboard:paste
+URxvt.iso14755:           false
+URxvt.iso14755_52:        false
+URxvt.clipboard.autocopy: true
+!URxvt.keysym.Shift-Control-c: eval:copy_to_clipboard
+!URxvt.keysym.Shift-Control-v: eval:paste_clipboard
+!URxvt.perl-ext-common: default #also disable keycaps
+
+! Background (pseudo-transparency)
+!URxvt.inheritPixmap: True
+!URxvt.transparent:   True
+!URxvt.shading:       10
+
+! Scrolling
+URxvt.jumpScroll:        true
+URxvt.skipScroll:        true
+URxvt.scrollBar:         true
+URxvt.scrollBar_right:   true
+URxvt.scrollTtyOutput:   false
+URxvt.scrollWithBuffer:  true
+URxvt.scrollTtyKeypress: true
+URxvt.scrollstyle:       rxvt
+URxvt.saveLines:         100000
+URxvt.searchable-scrollback: C-S-s
+
+! Fonts
+URxvt.font:           fontMono
+URxvt.boldFont:       fontMonoBold
+URxvt.italicFont:     fontMonoItalic
+URxvt.bolditalicFont: fontMonoBoldItalic
+
+! Colors
+URxvt.background:   backgroundColor
+URxvt.foreground:   textColor
+URxvt.cursorColor:  textColor
+URxvt.pointerColor: textColor
+URxvt.borderColor:  backgroundColor
+URxvt.scrollColor:  textColor
+URxvt.troughColor:  backgroundColor
+
+URxvt.color0: #000000
+URxvt.color1: #aa0000
+URxvt.color2: #00aa00
+URxvt.color3: #aa5500
+URxvt.color4: #6666cc
+URxvt.color5: #aa00aa
+URxvt.color6: #00aaaa
+URxvt.color7: #aaaaaa
+URxvt.color8: #555555
+URxvt.color9: #ff5555
+URxvt.color10: #55ff55
+URxvt.color11: #ffff55
+URxvt.color12: #5555ff
+URxvt.color13: #ff55ff
+URxvt.color14: #55ffff
+URxvt.color15: #ffffff
+

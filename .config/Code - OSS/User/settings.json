@@ -6,7 +6,9 @@
     "keyboard.dispatch": "keyCode",
     "go.useLanguageServer": true,
     "vim.useCtrlKeys": false,
+    "editor.fontFamily": "'DejaVu Sans Mono', 'monospace'",
     "editor.scrollBeyondLastColumn": 1,
+    "editor.scrollBeyondLastLine": false,
     "vs-kubernetes": {
         "vscode-kubernetes.kubectl-path.linux": "/home/b-con/.vs-kubernetes/tools/kubectl/kubectl",
         "vscode-kubernetes.helm-path.linux": "/home/b-con/.vs-kubernetes/tools/helm/linux-amd64/helm",
@@ -19,12 +21,18 @@
     "explorer.confirmDragAndDrop": false,
     "[markdown]": {
         "editor.wordWrapColumn": 80,
-        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrap": "bounded",
         "editor.rulers": [80]
     },
     "[plaintext]": {
         "editor.wordWrapColumn": 80,
-        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrap": "bounded",
         "editor.rulers": [80]
     },
+    "workbench.colorCustomizations": {
+        "minimap.background": "#00000011", // Slightly tinted transparent.
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "redhat.telemetry.enabled": false,
+    "workbench.startupEditor": "none",
 }

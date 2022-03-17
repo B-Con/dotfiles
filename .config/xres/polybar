@@ -1,0 +1,5 @@
+! Read by Polybar
+polybar.background: backgroundColor
+polybar.foreground: foregroundColor
+polybar.highlight:  highlightColor
+polybar.alert:      alertHighlightColor
